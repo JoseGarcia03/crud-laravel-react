@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Aside = () => {
   return (
-    <aside className="w-64" aria-label="Sidebar">
-      <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
-        <ul className="space-y-2 ml-5 ">
+    <aside className="w-64 h-screen mr-16" aria-label="Sidebar">
+      <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800 h-full">
+        <ul className="space-y-2 ml-5">
           <li>
             <Link
               to="/"

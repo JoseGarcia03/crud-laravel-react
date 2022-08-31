@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEmpleadosTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -16,11 +16,11 @@ class CreateEmpleadosTable extends Migration
         Schema::create('empleados', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->string('last_name');
-            $table->string('job');
-            $table->string('phone');
-            $table->text('address');
-            $table->string('age');
+            $table->string('apellido');
+            $table->string('cargo');
+            $table->string('telefono');
+            $table->text('email');
+            $table->string('edad');
             $table->timestamps();
         });
     }

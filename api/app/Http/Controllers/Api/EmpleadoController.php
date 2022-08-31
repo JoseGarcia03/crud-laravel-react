@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Empleado;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Empleado;
 
 class EmpleadoController extends Controller
 {
