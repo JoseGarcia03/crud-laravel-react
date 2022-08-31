@@ -1,18 +1,18 @@
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-
-import axios from "axios";
 
 import Home from "../containers/Home";
 import Login from "../containers/Login";
 import Register from "../containers/Register";
+import { getEmpleados } from "../redux/action/empleados";
 
 const AppRoutes = () => {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    axios
-      .get("http://localhost:8000/api/empleados")
-      .then((resp) => console.log(resp.data));
+    dispatch(getEmpleados());
   }, []);
 
   return (
