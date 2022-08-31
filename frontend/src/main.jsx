@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
+
+import AppRoutes from "./routes/AppRoutes";
+
+import "./styles/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>Hola Mundo!</React.StrictMode>
+  <React.StrictMode>
+    <AppRoutes />
+  </React.StrictMode>
 );
