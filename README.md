@@ -4,7 +4,7 @@
 ![priverion_home_desktop](./assets/priverion_home_desktop.png)
 
 ## Despliegue 📦
-- Localmente
+ - [Priverion Employees](https://lighthearted-truffle-62282f.netlify.app/)
 
 ## Echar andar el proyecto ⚙️
  *Requisitos previos*
@@ -14,6 +14,10 @@
  - Acceder a la carpeta API
  - Abrir la terminal y ejecutar
  ```
+ mysql -u root -p
+ CREATE DATABASE laravelcrud CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+ exit
+ php artisan migrate
  php artisan serve
  ```
  - Acceder a la capera FrontEnd

@@ -2,7 +2,7 @@ import { types } from "../types/empleadosTypes";
 
 import axios from "axios";
 
-const baseUrl = "http://127.0.0.1:8000/api";
+const baseUrl = "https://calm-ravine-03693.herokuapp.com/api";
 
 // Obtener los empleados
 export const getEmpleados = () => {
